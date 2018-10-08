@@ -9,7 +9,6 @@
 import Foundation
 
 class Deck {
-    private var Cards = [Card]()
     
     private let shapes = ["hearts", "diamonds", "clubs", "spades"]
     private var num = 1
@@ -25,12 +24,11 @@ class Deck {
     
     func getCardNum() -> String {
         switch num {
-        case 0: return "1"
-        case 11: return "jack"
-        case 12: return "king"
-        case 13: return "ace"
+        case 0, 1: return "2"
+        case 10: return "jack"
+        case 11: return "king"
+        case 12: return "ace"
         default: return String(num)
-        }
-        
+        }        
     }
 }

@@ -12,11 +12,6 @@ class ViewController: UIViewController {
     
     let deck = Deck()
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
-    }
-
     @IBOutlet weak var playingCardView: PlayingCardView! {
         didSet {
             let swipe = UISwipeGestureRecognizer(target: self, action: #selector(getNextCard))
@@ -29,11 +24,8 @@ class ViewController: UIViewController {
         let image = UIImage(named: deck.nextCard())
         let imageView = UIImageView(image: image)
         
-        self.playingCardView.layer.backgroundColor = UIColor.white.cgColor
+        self.playingCardView.subviews.forEach({ $0.removeFromSuperview() })
         self.playingCardView.addSubview(imageView)
-        self.playingCardView.bringSubview(toFront: imageView)
     }
-
-
 }
 

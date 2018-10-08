@@ -13,7 +13,6 @@
 		0DF56D4D216B6967001A6710 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DF56D4C216B6967001A6710 /* Assets.xcassets */; };
 		0DF56D50216B6967001A6710 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DF56D4E216B6967001A6710 /* LaunchScreen.storyboard */; };
 		0DF56D59216B6B9B001A6710 /* PlayingCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF56D58216B6B9B001A6710 /* PlayingCardView.swift */; };
-		0DF56D5B216B73DA001A6710 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF56D5A216B73DA001A6710 /* Card.swift */; };
 		0DF56D5D216B7419001A6710 /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF56D5C216B7419001A6710 /* Deck.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,7 +25,6 @@
 		0DF56D4F216B6967001A6710 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DF56D51216B6967001A6710 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DF56D58216B6B9B001A6710 /* PlayingCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayingCardView.swift; sourceTree = "<group>"; };
-		0DF56D5A216B73DA001A6710 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		0DF56D5C216B7419001A6710 /* Deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -66,7 +64,6 @@
 				0DF56D58216B6B9B001A6710 /* PlayingCardView.swift */,
 				0DF56D4E216B6967001A6710 /* LaunchScreen.storyboard */,
 				0DF56D51216B6967001A6710 /* Info.plist */,
-				0DF56D5A216B73DA001A6710 /* Card.swift */,
 				0DF56D5C216B7419001A6710 /* Deck.swift */,
 			);
 			path = MultitouchDemo;
@@ -156,7 +153,6 @@
 				0DF56D59216B6B9B001A6710 /* PlayingCardView.swift in Sources */,
 				0DF56D5D216B7419001A6710 /* Deck.swift in Sources */,
 				0DF56D46216B6965001A6710 /* AppDelegate.swift in Sources */,
-				0DF56D5B216B73DA001A6710 /* Card.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
