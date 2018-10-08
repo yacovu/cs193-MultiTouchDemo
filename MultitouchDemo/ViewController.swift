@@ -21,7 +21,7 @@ class ViewController: UIViewController {
         didSet {
             let swipe = UISwipeGestureRecognizer(target: self, action: #selector(getNextCard))
             swipe.direction = [.left, .right]
-            PlayingCardView.addGestureRecognizer(swipe)
+            playingCardView.addGestureRecognizer(swipe)
         }
     }
     
