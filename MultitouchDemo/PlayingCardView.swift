@@ -9,13 +9,14 @@
 import UIKit
 
 class PlayingCardView: UIView {
+    
+    var cardImageName: String = ""
 
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
     override func draw(_ rect: CGRect) {
-        // Drawing code
+        let roundRect = UIBezierPath(roundedRect: bounds, cornerRadius: 16.0)
+        roundRect.addClip()
+        UIColor.white.setFill()
+        roundRect.fill()
     }
-    */
 
 }
