@@ -17,12 +17,20 @@ class Deck {
 
     
     func nextCard() -> String {
-        let cardName = String(num) + "_of_" + shapes[shapeIndex]
+        let cardName = getCardNum() + "_of_" + shapes[shapeIndex]
         shapeIndex = (shapeIndex + 1) % 4
         num = (num + 1) % 13
-        if num == 0 {
-            num = 1
-        }
         return cardName
+    }
+    
+    func getCardNum() -> String {
+        switch num {
+        case 0: return "1"
+        case 11: return "jack"
+        case 12: return "king"
+        case 13: return "ace"
+        default: return String(num)
+        }
+        
     }
 }

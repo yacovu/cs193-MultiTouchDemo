@@ -9,8 +9,6 @@
 import UIKit
 
 class PlayingCardView: UIView {
-    
-    var cardImageName: String = ""
 
     override func draw(_ rect: CGRect) {
         let roundRect = UIBezierPath(roundedRect: bounds, cornerRadius: 16.0)

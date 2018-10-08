@@ -28,9 +28,10 @@ class ViewController: UIViewController {
     @objc func getNextCard() {
         let image = UIImage(named: deck.nextCard())
         let imageView = UIImageView(image: image)
-        imageView.frame = CGRect(x: 0, y: 0, width: 100, height: 200)
-        view.addSubview(imageView)
-        view.bringSubview(toFront: imageView)
+        
+        self.playingCardView.layer.backgroundColor = UIColor.white.cgColor
+        self.playingCardView.addSubview(imageView)
+        self.playingCardView.bringSubview(toFront: imageView)
     }
 
 
